@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <div class="mx-auto main-body" id="instructions" style="width: 75% ">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container ">
+                <h1 class="display-4 text-center font-weight-bold">Fishy Quiz</h1>
+                <h1 class="text-center">Rules: </h1>
+
+                <p class="lead text-center">You have 60 Seconds to answer 8 questions, but you gotta be quick! Answer these questions as a matter of great
+                    'urchine'-cy
+                </p>
+            </div>
+            <div class="form-row text-center">
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary" id="startQuiz">START QUIZ</button>
+                </div>
+            </div>
+            <p class="lead text-center ew">(wow these puns are bad)</p>
+            <p class="text-center ew2">(sorry)</p>
+        </div>
+
+    </div>
+
+    <div class="question-section" id="questions">
+        <form class="text-center">
+            <div id="countDown"></div>
+            <p class="q">1) What is the term used for someone who studies fish?</p>
+            <ul>
+                <input type="radio" name="Question1" id="1a" value="w">
+                <label for="1a">Fishology</label>
+                <input type="radio" name="Question1" id="1b" value="w">
+                <label for="1b">Pescatarian</label>
+                <input type="radio" name="Question1" id="1c" value="w">
+                <label for="1c">Fish dude</label>
+                <input type="radio" name="Question1" id="1d" value="c">
+                <label for="1d">Ichthyology</label>
+            </ul>
+            <br>
+            <br>
+            <p class="q">2) What is the LARGEST fish in the world?</p>
+            <ul>
+                <input type="radio" name="Question2" id="2a" value="c">
+                <label for="2a">Whale shark</label>
+                <input type="radio" name="Question2" id="2b" value="w">
+                <label for="2b">giant catfish</label>
+                <input type="radio" name="Question2" id="2c" value="w">
+                <label for="2c">Blue whale</label>
+                <input type="radio" name="Question2" id="2d" value="w">
+                <label for="2d">"Mega Shark" (from a terrible movie)</label>
+            </ul>
+            <br>
+            <br>
+            <p class="q">3) What is the smallest fish in the world?</p>
+            <ul>
+                <input type="radio" name="Question3" id="3a" value="c">
+                <label for="3a">Paedocypris progenetica</label>
+                <input type="radio" name="Question3" id="3b" value="w">
+                <label for="3b">Leptotyphlops</label>
+                <input type="radio" name="Question3" id="3c" value="w">
+                <label for="3c">Tiny Boi</label>
+                <input type="radio" name="Question3" id="3d" value="w">
+                <label for="3d">Arrow Blenny</label>
+            </ul>
+            <br>
+            <br>
+            <p class="q">4) What is the fastest fish in the world?</p>
+            <ul>
+                <input type="radio" name="Question4" id="4a" value="w">
+                <label for="4a">Shrimp</label>
+                <input type="radio" name="Question4" id="4b" value="c">
+                <label for="4b">Sailfish</label>
+                <input type="radio" name="Question4" id="4c" value="w">
+                <label for="4c">Swordfish</label>
+                <input type="radio" name="Question4" id="4d" value="w">
+                <label for="4d">Blue marlin</label>
+            </ul>
+            <br>
+            <br>
+            <p class="q">5) Do fish breathe oxygen?</p>
+            <ul>
+                <input type="radio" name="Question5" id="5a" value="c">
+                <label for="5a">YES</label>
+                <input type="radio" name="Question5" id="5b" value="w">
+                <label for="5b">NOPE</label>
+
+            </ul>
+            <br>
+            <br>
+            <p class="q">6) How many teeth can a shark grow during its lifetime?</p>
+            <ul>
+                <input type="radio" name="Question6" id="6a" value="w">
+                <label for="6a">50</label>
+                <input type="radio" name="Question6" id="6b" value="w">
+                <label for="6b">250</label>
+                <input type="radio" name="Question6" id="6c" value="w">
+                <label for="6c">1,000</label>
+                <input type="radio" name="Question6" id="6d" value="c">
+                <label for="6d">5,000</label>
+            </ul>
+            <br>
+            <br>
+            <p class="q">7) Which fish is most often grown on farms?</p>
+            <ul>
+                <input type="radio" name="Question7" id="7a" value="w">
+                <label for="7a">Goldfish</label>
+                <input type="radio" name="Question7" id="7b" value="w">
+                <label for="7b">Blue fish</label>
+                <input type="radio" name="Question7" id="7c" value="w">
+                <label for="7c">Salmon</label>
+                <input type="radio" name="Question7" id="7d" value="c">
+                <label for="7d">Carp</label>
+            </ul>
+            <br>
+            <br>
+
+            <p class="q">8) Do fish have eyelids?</p>
+            <ul>
+                <input type="radio" name="Question8" id="8a" value="w">
+                <label for="8a">YES</label>
+                <input type="radio" name="Question8" id="8b" value="c">
+                <label for="8b">NOPE</label>
+            </ul>
+            <br>
+            <br>
+            <div class="form-row text-center">
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary" id="endQuiz">Submit Results</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="mx-auto main-body" id="results" style="width: 75% ">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container ">
+                <h1 class="display-4 text-center font-weight-bold">-RESULTS- </h1>
+                <h1 class="text-center" id="correct"> </h1>
+                <h1 class="text-center" id="incorrect"> </h1>
+                <h1 class="text-center" id="none"> </h1>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

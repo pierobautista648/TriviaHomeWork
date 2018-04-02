@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfKLoah9GDydiKebK7-R6G_KLTH8BE-2TkSFOXEzpH-GGvvhXxlg");
+    
+}
+.main-body {
+    border: 25px solid rgba(19, 110, 110, 0.616);
+    margin: 50px;
+    padding: 20px;
+    background: rgba(100, 134, 245, 0.404);
+
+}
+.question-section {
+    border: 25px solid rgba(19, 110, 110, 0.616);
+    margin: 50px;
+    padding: 20px;
+    background: rgba(100, 134, 245, 0.918);
+}
+.ew {
+    font-size: 11px;
+}
+.ew2 {
+    font-size: 10px;
+}
+.q {
+    font-weight: bold;
+    font-size: 30px;
+    background: rgba(32, 178, 171, 0.418);
+}
+#countDown {
+    background: lightblue;
+}
